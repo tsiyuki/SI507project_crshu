@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+<script type="text/javascript">
+// $(document).ready(function(){
+// 	$("form").submit(function(event){
+// 		var park_name = document.getElementById("park_name").value;
+// 		var form = this;
+// 		form.action = "http://localhost:5000/park/"  + park_name;
+// 		form.submit();
+// 		alert("hi")
+
+// 	)},
+// });
+// document.getElementById('form1').addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     var park_name = document.getElementById("park_name").value;
+//     this.action = "http://localhost:5000/park/" + park_name;
+//     this.submit();
+// }, false);
+function changeFormAction(form) {
+  var park_name = document.getElementById("park_name").value;
+  form.action = "http://localhost:5000/park/" + park_name;
+  form.submit();
+}
+</script>
+</head>
+
+<body>
+	<div class="page-header">
+	    <h1>{% if num_parks %}{{ num_parks }}{% else %}0{% endif %} parks saved.</h1>
+	</div>
+
+	<br>
+	<br>
+
+	<h4>If you know the park name, you can directly search it here.</h4>
+
+
+	<form id="form1" >
+	    <label for="oneWord">Park name:</label>
+	    <input type="text" name="park_name" id="park_name">
+	    <input type="submit" value="Submit" onClick="changeFormAction(this.form)">
+	</form>    
+
+
+	<br>
+	<br>
+	<h4> If you do not know a specific park name, you can search it based on the state and type from the link below. You can also see the park type histogram for different state in this route below.</h4>
+	<a href="{{ url_for('stateForm')}}">Go to the state selection form. <br><br>
+
+</body>
+
