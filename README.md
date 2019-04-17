@@ -1,4 +1,4 @@
-# SI final project
+# SI507 final project
 
 Chenrui Shu
 
@@ -22,11 +22,42 @@ On the homepage, the user could either search the detailed infomation of a parti
 7. After finishing using the application, deactivate your virtual environment. `deactivate`
 
 ## How to use
-This park would be implemented later after check in.
+This part would be finished later after check in.
 
-1. A useful instruction goes here
-2. A useful second step here
-3. (Optional): Markdown syntax to include an screenshot/image: ![alt text](image.jpg)
+- First, we would see the home page which is shown in the screenshot below. There are three parts in this homepage. 
+	- The first part shows the total number of parks stored in the database, i.e. the total number is 489 in this case. 
+	- The second part allows the user to enter a park name ,and after the user click the `submit` button, the application would return a corresponding infomation regarding that park name. 
+	- The third part will navigate the user to the state selection form after the user click `Go to the state selection form` link.
+
+![homepage](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/homepage.png)
+
+- For the second part of the homepage, if the user entered an invalid park name which is not stored in the database, an error message page would show up. The screenshot is displayed below. Also in the bottom of the page, a link is provided to return to the home page.
+
+![wrong_name](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/wrong_park_name.png)
+
+- For the second part of the homepage, if the user entered an valid park name which exists in the database, then an page with the detailed infomation about that park would show up. The screenshot is displayed below. Also in the bottom of the page, a link is provided to return to the home page.
+
+![correct_name](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/park_info.png)
+
+- For the third part of the homepage, if the user click the `Go to the state selection form` link, the user would be naviageted to the state selection form shown below in the screentshot. The user are able to select the state from the drop down list and click the `submit` botton. Also in the bottom of the page, a link is provided to return to the home page.
+
+![state_form](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/state_form.png)
+
+![state_form](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/drop_down_list.png)
+
+- After the user click the `submit` botton, the user would see a histogram showing the number of different types of parks in that state. Meanwhile, users could click the type name to see the park list. Moreover, users could click `Go to the state selection form` and return to the state selection form. Also in the bottom of the page, a link is provided to return to the home page. 
+
+A screenshot is given below to show the result when the user choose the Washington state. In the screentshot, we could know that there are 1 park in type National Historical Reserve, 2 parks in type National Historical Park, 1 park in type National Recreation Area, 3 parks in type National Park, 1 park in type National Historic Site and 1 park in type Affiliated Area.
+
+![state_type_result](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/state_result2.png)
+
+- After the user click the type name, a list of park name would display. The user is able to click the park name to see the detaild infomation of that park. Also in the bottom of the page, a link is provided to return to the home page. The screentshot is shown below when the user click the National Park in the Washington state. We could see that there are three parks with name Mount Rainier, North Cascades and Olympic. 
+
+![park_result](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/state_type_result.png)
+
+- After the user click the park name, a detailed infomation page would show up. Also in the bottom of the page, a link is provided to return to the home page. The screentshot is shown below when the user click the Mount Rainier in the park list.
+
+![park_info2](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/park_info2.png)
 
 ## Routes in this application
 - `/` -> this is the home page
@@ -53,8 +84,9 @@ This park would be implemented later after check in.
 - SI507project_tools.py
 - SI507project_tests.py
 - README.md
-- parks.db
+- sample_parks.db
 - SI507project_db_schema.png
+- requirements.txt 
 
 ---
 ## Code Requirements for Grading
@@ -65,22 +97,22 @@ Please check the requirements you have accomplished in your code as demonstrated
 Below is a list of the requirements listed in the rubric for you to copy and paste.  See rubric on Canvas for more details.
 
 ### General
-- [ ] Project is submitted as a Github repository
-- [ ] Project includes a working Flask application that runs locally on a computer
+- [x] Project is submitted as a Github repository
+- [x] Project includes a working Flask application that runs locally on a computer
 - [x] Project includes at least 1 test suite file with reasonable tests in it.
 - [ ] Includes a `requirements.txt` file containing all required modules to run program
 - [x] Includes a clear and readable README.md that follows this template
 - [x] Includes a sample .sqlite/.db file
-- [ ] Includes a diagram of your database schema
-- [ ] Includes EVERY file needed in order to run the project
+- [x] Includes a diagram of your database schema
+- [x] Includes EVERY file needed in order to run the project
 - [ ] Includes screenshots and/or clear descriptions of what your project should look like when it is working
 
 ### Flask Application
 - [x] Includes at least 3 different routes
-- [ ] View/s a user can see when the application runs that are understandable/legible for someone who has NOT taken this course
-- [ ] Interactions with a database that has at least 2 tables
-- [ ] At least 1 relationship between 2 tables in database
-- [ ] Information stored in the database is viewed or interacted with in some way
+- [x] View/s a user can see when the application runs that are understandable/legible for someone who has NOT taken this course
+- [x] Interactions with a database that has at least 2 tables
+- [x] At least 1 relationship between 2 tables in database
+- [x] Information stored in the database is viewed or interacted with in some way
 
 ### Additional Components (at least 6 required)
 - [x] Use of a new module
