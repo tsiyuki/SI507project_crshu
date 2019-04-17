@@ -58,10 +58,9 @@ def save_figure(types, state_name):
 
 
 
+######### web scraping ######################
 
 def web_scraping():
-	
-	######### web scraping ######################
 
 	#overal base url for both homepage and sub-pages
 
@@ -145,6 +144,7 @@ def web_scraping():
 
 
 ################## database population #######################
+
 def insert_park(park_name, park_type, park_description, park_location, state_name, pysical_address):
     # first query based on human knowledge
     state = get_or_create_state(state_name)
@@ -199,10 +199,6 @@ def main_populate(dataset_filename):
                 insert_park(park_name, park_type, park_description, park_location, state_name, pysical_address)
     except:
         return False   
-
-########---------web scraping--------##################
-
-	########-----------------##################
 
 
 if __name__ == "__main__":
