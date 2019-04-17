@@ -18,15 +18,13 @@ On the homepage, the user could either search the detailed infomation of a parti
 3. creat a new virtual environment, `python3 -m venv env` for python3 and `virtualenv env` for python2.
 4. activate your virtual environment `source env/bin/activate`
 5. insall required dependencies`pip install -r requirements.txt `
-6. run `python SI507project.py runserver`
+6. run `pythonw SI507project.py runserver`
 7. After finishing using the application, deactivate your virtual environment. `deactivate`
 
 ## How to use
-This part would be finished later after check in.
-
 - First, we would see the home page which is shown in the screenshot below. There are three parts in this homepage. 
 	- The first part shows the total number of parks stored in the database, i.e. the total number is 489 in this case. 
-	- The second part allows the user to enter a park name ,and after the user click the `submit` button, the application would return a corresponding infomation regarding that park name. 
+	- The second part allows the user to enter a park name ,and after the user clicks the `submit` button, the application would return a corresponding infomation regarding that park name. 
 	- The third part will navigate the user to the state selection form after the user click `Go to the state selection form` link.
 
 ![homepage](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/homepage.png)
@@ -39,7 +37,7 @@ This part would be finished later after check in.
 
 ![correct_name](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/park_info.png)
 
-- For the third part of the homepage, if the user click the `Go to the state selection form` link, the user would be naviageted to the state selection form shown below in the screentshot. The user are able to select the state from the drop down list and click the `submit` botton. Also in the bottom of the page, a link is provided to return to the home page.
+- For the third part of the homepage, if the user click the `Go to the state selection form` link, the user would be naviageted to the state selection form shown below in the screentshot. The user are able to select the state from the drop down list and click the `submit` botton. The drop down list is shown in the second screenshot below. Also in the bottom of the page, a link is provided to return to the home page.
 
 ![state_form](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/state_form.png)
 
@@ -47,7 +45,7 @@ This part would be finished later after check in.
 
 - After the user click the `submit` botton, the user would see a histogram showing the number of different types of parks in that state. Meanwhile, users could click the type name to see the park list. Moreover, users could click `Go to the state selection form` and return to the state selection form. Also in the bottom of the page, a link is provided to return to the home page. 
 
-A screenshot is given below to show the result when the user choose the Washington state. In the screentshot, we could know that there are 1 park in type National Historical Reserve, 2 parks in type National Historical Park, 1 park in type National Recreation Area, 3 parks in type National Park, 1 park in type National Historic Site and 1 park in type Affiliated Area.
+  A screenshot is given below to show the result when the user choose the Washington state. In the screentshot, we could know that there are 1 park in type National Historical Reserve, 2 parks in type National Historical Park, 1 park in type National Recreation Area, 3 parks in type National Park, 1 park in type National Historic Site and 1 park in type Affiliated Area.
 
 ![state_type_result](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/state_result2.png)
 
@@ -59,6 +57,7 @@ A screenshot is given below to show the result when the user choose the Washingt
 
 ![park_info2](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/park_info2.png)
 
+Note: No need to type a word in the url during the procedure in using the application.
 ## Routes in this application
 - `/` -> this is the home page
 - `/stateForm` -> this route has a form for user to select state
