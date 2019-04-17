@@ -47,7 +47,7 @@ class CVSTests(unittest.TestCase):
 	def test_park_data2(self):
 		self.park_file = open('park_data.csv','r')
 		self.row_reader = self.park_file.readlines()
-		self.assertTrue(len(self.row_reader) == 4943, "Testing that there are {} lines in park_data".format(len(self.row_reader)))
+		self.assertTrue(len(self.row_reader) == 4932, "Testing that there are {} lines in park_data".format(len(self.row_reader)))
 		self.park_file.close()
 
 
