@@ -67,7 +67,7 @@ Note: No need to type a word in the url during the procedure in using the applic
 
 ## How to run tests
 1. First `cd` to the directory where ***SI507project_tests.py*** is located
-2. Second run the test file `python SI507project_tests.py`
+2. Second run the test file `pythonw SI507project_tests.py`
 
 
 ## In this repository:
