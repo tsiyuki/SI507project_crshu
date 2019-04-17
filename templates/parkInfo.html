@@ -1,0 +1,26 @@
+<style type="text/css">
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+
+{%if not info%}
+
+<h1>Not such park stored in the database.</h1>
+
+{%else%}
+<table style="width:100%">
+  {%for item in info%}
+  <tr>
+    <th>{{item}}</th>
+    <td>{{info[item]}}</td>
+  </tr>
+  {%endfor%}
+</table>
+
+{%endif%}
+<br>
+<a href="{{ url_for('index')}}">Return to home page</a>

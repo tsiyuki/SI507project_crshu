@@ -1,0 +1,13 @@
+<form action="http://localhost:5000/stateResult" method='GET'>
+Choose a state
+<select class="form-control" name="state">
+    {% for state in states %}
+        <option value="{{state.name}}" SELECTED>{{state.name}}</option>"
+    {% endfor %}
+</select>
+<br>
+<input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<a href="{{ url_for('index')}}">Return to home page</a>

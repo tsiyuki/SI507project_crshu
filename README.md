@@ -54,6 +54,7 @@ This park would be implemented later after check in.
 - SI507project_tests.py
 - README.md
 - parks.db
+- SI507project_db_schema.png
 
 ---
 ## Code Requirements for Grading

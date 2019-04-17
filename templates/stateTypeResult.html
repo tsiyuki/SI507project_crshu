@@ -1,0 +1,9 @@
+Click park name to see detailed infomation for this park. <br>
+<h4>park name list:</h4>
+{% for park in parks%}
+<a href="{{ url_for('park', park_name = park.name)}}"> {{park.name}}</a>
+<br>
+{%endfor%}
+<br>
+<br>
+<a href="{{ url_for('index')}}">Return to home page</a>

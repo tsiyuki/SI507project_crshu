@@ -1,0 +1,12 @@
+<img src="/static/state.png" alt="number of parks in state with different type plot">
+
+<br>
+Click the type name below to see parks' name with that type in the state. (None indicates the type is not determined/available)
+<br>
+{% for i in types%}
+<a href="{{ url_for('stateTypeResult', state_name = state_name, type_name = types[i])}}">{{i}} : {{types[i]}} </a>
+<br>
+{%endfor%}
+<br>
+<a href="{{ url_for('stateForm')}}">Go to the state selection form. <br><br>
+<a href="{{ url_for('index')}}">Return to home page</a>
