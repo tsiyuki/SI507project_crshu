@@ -18,7 +18,7 @@ On the homepage, the user could either search the detailed infomation of a parti
 3. creat a new virtual environment, `python3 -m venv env` for python3 and `virtualenv env` for python2.
 4. activate your virtual environment `source env/bin/activate`
 5. insall required dependencies`pip install -r requirements.txt `
-6. run `pythonw SI507project.py runserver`
+6. Before running the main program, make sure to `conda install python.exe`, then run `pythonw SI507project.py runserver`.
 7. After finishing using the application, deactivate your virtual environment. `deactivate`
 
 ## How to use
