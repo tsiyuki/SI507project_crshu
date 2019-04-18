@@ -8,7 +8,7 @@ Chenrui Shu
 
 ## Project Description
 
-My project will collect the data of national parks scraped from a website and display corresponding visualized results based on users’ action on the Flask based website. 
+My project will collect the data of national parks scraped from a website [Link to the website](https://www.nps.gov/index.htm.) and display corresponding visualized results based on users’ action on the Flask based website. 
 
 On the homepage, the user could either search the detailed infomation of a particular park by the park name or start searching from the state. If the user choose to start from state, they will be navigated to a form, and then they can select a state name and submit the form to see a histogram indicating the number of different types of parks in that state. Then, they can select a type from that state, and a list of park name of that type in the state would be shown up. After that, the user could click the park name and the detailed park infomation would be displayed.
 ## How to run
