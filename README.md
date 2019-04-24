@@ -13,12 +13,14 @@ My project will collect the data of national parks scraped from a website [Link 
 On the homepage, the user could either search the detailed infomation of a particular park by the park name or start searching from the state. If the user choose to start from state, they will be navigated to a form, and then they can select a state name and submit the form to see a histogram indicating the number of different types of parks in that state. Then, they can select a type from that state, and a list of park name of that type in the state would be shown up. After that, the user could click the park name and the detailed park infomation would be displayed.
 ## How to run
 
+Note:This is for the Mac OS X backend
+
 1. Download the whole project
 2. `cd` to the directory where ***requirements.txt*** is located
 3. creat a new virtual environment, `python3 -m venv env` for python3 and `virtualenv env` for python2.
 4. activate your virtual environment `source env/bin/activate`
 5. insall required dependencies`pip install -r requirements.txt `
-6. Before running the main program, make sure to `conda install python.exe`, then run `pythonw SI507project.py runserver`.
+6. Before running the main program, make sure to `conda install python.exe`, then run `pythonw SI507project.py runserver`. *Note:We are using `pythonw` here instead of `python` because we need to install python as a framework for the matplotli GUI function.*
 7. After finishing using the application, deactivate your virtual environment. `deactivate`
 
 ## How to use
@@ -33,7 +35,7 @@ On the homepage, the user could either search the detailed infomation of a parti
 
 ![wrong_name](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/wrong_park_name.png)
 
-- For the second part of the homepage, if the user entered an valid park name which exists in the database, then an page with the detailed infomation about that park would show up. The screenshot is displayed below. Also in the bottom of the page, a link is provided to return to the home page.
+- For the second part of the homepage, if the user entered an valid park name which exists in the database, then an page with the detailed infomation about that park would show up. For example, you can enter `Devils Tower` too see the result. The screenshot is displayed below. Also in the bottom of the page, a link is provided to return to the home page.
 
 ![correct_name](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/park_info.png)
 
