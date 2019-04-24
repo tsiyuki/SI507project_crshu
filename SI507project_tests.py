@@ -44,11 +44,6 @@ class CVSTests(unittest.TestCase):
 		self.assertTrue(self.row_reader[25].split(",")[0], "Testing that there is a Name / first value in the row at index 25")
 		self.park_file.close()
 
-	def test_park_data2(self):
-		self.park_file = open('park_data.csv','r')
-		self.row_reader = self.park_file.readlines()
-		self.assertTrue(len(self.row_reader) == 4932, "Testing that there are {} lines in park_data".format(len(self.row_reader)))
-		self.park_file.close()
 
 
 class ParkInfoClassTest(unittest.TestCase):
