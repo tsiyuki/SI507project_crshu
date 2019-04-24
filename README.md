@@ -132,4 +132,4 @@ Below is a list of the requirements listed in the rubric for you to copy and pas
 
 ### Submission
 - [x] I included a link to my GitHub repository with the correct permissions on Canvas! (Did you though? Did you actually? Are you sure you didn't forget?)
-- [ ] I included a summary of my project and how I thought it went **in my Canvas submission**!
+- [x] I included a summary of my project and how I thought it went **in my Canvas submission**!
