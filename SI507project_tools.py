@@ -37,7 +37,7 @@ class ParkInfo:
 
 ###### help functions ######################
 def save_figure(types, state_name):
-	matplotlib.use('TkAgg')
+	matplotlib.use('Agg')
 
 	x = []
 	y = []
