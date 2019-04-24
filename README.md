@@ -31,11 +31,11 @@ Note:This is for the Mac OS X backend
 
 ![homepage](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/homepage.png)
 
-- For the second part of the homepage, if the user entered an invalid park name which is not stored in the database, an error message page would show up. The screenshot is displayed below. Also in the bottom of the page, a link is provided to return to the home page.
+- For the second part of the homepage, if the user entered an invalid park name which is not stored in the database, an error message page would show up. For example, you can enter `asd` to see the result. The screenshot is displayed below. Also in the bottom of the page, a link is provided to return to the home page.
 
 ![wrong_name](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/wrong_park_name.png)
 
-- For the second part of the homepage, if the user entered an valid park name which exists in the database, then an page with the detailed infomation about that park would show up. For example, you can enter `Devils Tower` too see the result. The screenshot is displayed below. Also in the bottom of the page, a link is provided to return to the home page.
+- For the second part of the homepage, if the user entered an valid park name which exists in the database, then an page with the detailed infomation about that park would show up. For example, you can enter `Devils Tower` to see the result. The screenshot is displayed below. Also in the bottom of the page, a link is provided to return to the home page.
 
 ![correct_name](https://github.com/tsiyuki/SI507project_crshu/blob/master/screenshots/park_info.png)
 
